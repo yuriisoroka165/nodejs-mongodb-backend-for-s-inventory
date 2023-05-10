@@ -16,7 +16,7 @@ const departmentSchema = new Schema(
             type: String,
         },
     },
-    { versionKey: false, timestamps: true }
+    { versionKey: false, timestamps: false }
 );
 
 departmentSchema.post("save", handleMongooseError);
